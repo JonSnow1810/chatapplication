@@ -17,6 +17,7 @@ var midPort = app.listen(port, function () {
     console.log('Node.js listening on port ' + port);
 })
 
+
 var io = require('socket.io').listen(midPort);
 // set up socket connection
 io.sockets.on('connection', function (socket) {
